@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: global-politics-news
+    runtime: python
+    buildCommand: ""
+    startCommand: python app.py --host 0.0.0.0
+    envVars:
+      - key: NEWS_SESSION_TTL_HOURS
+        value: "12"
